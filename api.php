@@ -10,6 +10,6 @@
         "Resultado" => "La sumatoria de los números enteros es : $suma ",
         "Mensaje" => "Servidor de origen ".$_SERVER["HTTP_HOST"]
     ];
-    
-    echo json_encode($obj,JSON_PRETTY_PRINT);
+ 
+    echo json_encode($obj,JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 ?>
